@@ -159,15 +159,38 @@
 
 				</ul>
 			</li>
-		<li class="nav-item">
-			<%= link_to "Action Board", pages_action_path, :class => "nav-link" %>
-		</li>
-		<li class="nav-item">
-			<%= link_to "Users", pages_users_path, :class => "nav-link" %>
-		</li>
-		<li class="nav-item">
-			<%= link_to "Settings", pages_settings_path, :class => "nav-link" %>
-		</li>
+
+
+			<% if current_page?(pages_action_path) -%>
+				  <li class="nav-item">
+				    <%= link_to "Action board", pages_action_path, :class => "nav-link active" %>
+				  </li>
+				<% else -%>
+				  <li class="nav-item">
+				    <%= link_to "Action board", pages_action_path, :class => "nav-link" %>
+				  </li>
+			 <% end -%>
+
+			 <% if current_page?(pages_users_path) or current_page?(pages_teams_path) or current_page?(pages_teamsnew_path) or current_page?(pages_usersnew_path) %>
+				  <li class="nav-item">
+				    <%= link_to "Users", pages_users_path, :class => "nav-link active" %>
+				  </li>
+				<% else -%>
+				  <li class="nav-item">
+				    <%= link_to "Users", pages_users_path, :class => "nav-link" %>
+				  </li>
+			 <% end -%>
+
+			  <% if current_page?(pages_settings_path) or current_page?(pages_settings1_path) or current_page?(pages_settings2_path) -%>
+				  <li class="nav-item">
+				    <%= link_to "Settings", pages_settings_path, :class => "nav-link active" %>
+				  </li>
+				<% else -%>
+				  <li class="nav-item">
+				    <%= link_to "Settings", pages_settings_path, :class => "nav-link" %>
+				  </li>
+			 <% end -%>
+
 	</ul>
 </nav>
 
