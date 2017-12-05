@@ -1,0 +1,750 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+
+
+	<main class="col-xs-12 col-sm-8 col-lg-9 col-xl-10 pt-3 pl-4 ml-auto">
+		<header class="page-header row justify-center">
+			<div class="col-md-6 col-lg-8">
+				<h1 class="float-left text-center text-md-left">Users </h1>
+
+			</div>
+			<div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<img src="https://i.imgur.com/sRiXEAA.jpg" alt="profile photo" class="circle float-left profile-photo" width="50" height="auto">
+				<div class="username mt-1">
+					<h4 class="mb-1">Shaun Bradley</h4>
+					<h6 class="text-muted">People Director</h6>
+				</div>
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><%= link_to "My Profile", pages_profile_path, :class => "dropdown-item" %>
+				     <a class="dropdown-item" href="#">Logout</a></div>
+			</div>
+			<div class="clear"></div>
+		</header>
+
+			<section class="row space">
+			<div class="col-md-6">
+				<nav class="breadcrumb">
+				  
+				</nav>
+			</div>
+			<div class="col-md-6">
+				<div class="float-right">
+					<%= link_to pages_teams_path do %>
+						<button type="button" class="btn btn-md btn-tertiary">View teams</button>
+					<% end %>
+					<%= link_to "Invite new user", pages_usersnew_path, :class => "btn btn-md btn-secondary" %>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="row top-space">
+			<div class="col-sm-12">
+				<section class="row refresh">
+					<div class="col-md-4 col-lg-4">
+						<div class="card mb-3 text-center ">
+								<div class="card-block">
+									<h1>396</h1>
+									<h5 class="mt-2 mb-1">Total Users </h5>
+									</div>
+								</div>
+						</div>
+					<div class="col-md-4 col-lg-4">
+						<div class="card mb-3 text-center ">
+								<div class="card-block">
+									<h1>96</h1>
+									<h5 class="mt-2 mb-1">Active Users <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="People that have answered a survey in the last 4 weeks"></em></h5>
+									</div>
+								</div>
+					
+					</div><div class="col-md-4 col-lg-4">
+						<div class="card mb-3 text-center ">
+								<div class="card-block">
+									<h1>42</h1>
+									<h5 class="mt-2 mb-1">Inactive users <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="People that haven't answered a survey in the last 4 weeks"></em></h5>
+									<div class="dropdown card-title-btn-container">
+											<button class="btn btn-sm btn-subtle" type="button" data-toggle="modal" data-target="#myModal3"><em class="fa fa-pencil"></em> Message</button>
+									</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</section>
+
+
+
+				<section class="row">
+					<div class="col-sm-12">
+						<section class="row">
+							<div class="col-md-12 col-lg-12">
+								<div class="card mb-4">
+									<div class="card-block">
+										<h3 class="card-title">All users</h3>
+								<table class="table table-hover">
+									<thead>
+										<tr>
+											<th>First name</th>
+											<th>Last name</th>
+											<th>Team</th>
+											<th>Role</th>
+											<th>Invited</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Bill</td>
+											<td>Hewitt</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Chris</td>
+											<td>Camacho</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+							
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+												<button class="btn btn-sm btn-subtle"> Resend Invite</button>
+											</td>
+										</tr>
+										<tr>
+											<td>Gabriele</td>
+											<td>Camarda</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Sam</td>
+											<td>Chelton</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Elsa</td>
+											<td>Bacchiolelli</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Bill</td>
+											<td>Hewitt</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Chris</td>
+											<td>Camacho</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+												<button class="btn btn-sm btn-subtle"> Resend Invite</button>
+											</td>
+										</tr>
+										<tr>
+											<td>Gabriele</td>
+											<td>Camarda</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Sam</td>
+											<td>Chelton</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Elsa</td>
+											<td>Bacchiolelli</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Bill</td>
+											<td>Hewitt</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Chris</td>
+											<td>Camacho</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Gabriele</td>
+											<td>Camarda</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Bill</td>
+											<td>Hewitt</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Chris</td>
+											<td>Camacho</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+												<button class="btn btn-sm btn-subtle"> Resend Invite</button>
+											</td>
+										</tr>
+										<tr>
+											<td>Gabriele</td>
+											<td>Camarda</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Sam</td>
+											<td>Chelton</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Elsa</td>
+											<td>Bacchiolelli</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Bill</td>
+											<td>Hewitt</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Chris</td>
+											<td>Camacho</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Gabriele</td>
+											<td>Camarda</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Sam</td>
+											<td>Chelton</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Elsa</td>
+											<td>Bacchiolelli</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Bill</td>
+											<td>Hewitt</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Chris</td>
+											<td>Camacho</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Gabriele</td>
+											<td>Camarda</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Sam</td>
+											<td>Chelton</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Elsa</td>
+											<td>Bacchiolelli</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Bill</td>
+											<td>Hewitt</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Chris</td>
+											<td>Camacho</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Gabriele</td>
+											<td>Camarda</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Sam</td>
+											<td>Chelton</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Elsa</td>
+											<td>Bacchiolelli</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Bill</td>
+											<td>Hewitt</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Chris</td>
+											<td>Camacho</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Gabriele</td>
+											<td>Camarda</td>
+											<td>Product & Engineering</td>
+											<td>Employee</td>
+											<td>Nov 2017</td>
+											<td>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal1"><em class="fa fa-pencil"></em></a>
+												<a href="#" class="trash" data-toggle="modal" data-target="#myModal2"><em class="fa fa-trash"></em></a>
+											</td>
+										</tr>
+										
+									</tbody>
+
+								</table>
+								<div class="row"><div class="col-sm-12 col-md-12"><div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 5 of 396 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="example_previous"><a href="#" aria-controls="example" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="example" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="4" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="5" tabindex="0" class="page-link">5</a></li><li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="6" tabindex="0" class="page-link">6</a></li><li class="paginate_button page-item next" id="example_next"><a href="#" aria-controls="example" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li></ul></div></div></div>
+							</div>
+							</div>
+
+					
+						</div>
+					</div>
+				</section>
+	
+
+						<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add new user</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">First name</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First name">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Last name</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last name">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Email name</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+		  </div>
+		</form>
+		<div class="form-group">
+		    <label for="exampleSelect1">Role</label>
+		    <select class="form-control" id="exampleSelect1">
+		      <option>Employee</option>
+		      <option>Team Lead</option>
+		      <option>Admin</option>
+		    </select>
+		  </div>
+		<div class="form-group">
+		    <label for="exampleSelect1">Add to the following team</label>
+		    <select class="form-control" id="exampleSelect1">
+		      <option>Perkbox</option>
+		      <option>Account Management</option>
+		      <option>Product & Engineering</option>
+		      <option>London</option>
+		      <option>Sheffield</option>
+		    </select>
+		  </div>
+		  <a class="ul-link js-add-user-box" href="#">Add another user</a>
+		  <span> or </span>
+		  <a class="ul-link" href="#">Invite several people at once</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Add user</button>
+      </div>
+    </div>
+  </div>
+</div>	
+
+
+						<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit user</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">First name</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="User's first name">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Last name</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="User's last name">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Email name</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="User's email address">
+		  </div>
+		</form>
+		<div class="form-group">
+		    <label for="exampleSelect1">Role</label>
+		    <select class="form-control" id="exampleSelect1">
+		      <option>Employee</option>
+		      <option>Team Lead</option>
+		      <option>Admin</option>
+		    </select>
+		  </div>
+		<div class="form-group">
+		    <label for="exampleSelect1">Add to the following team</label>
+		    <select class="form-control" id="exampleSelect1">
+		      <option>Perkbox</option>
+		      <option>Account Management</option>
+		      <option>Product & Engineering</option>
+		      <option>London</option>
+		      <option>Sheffield</option>
+		    </select>
+		  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>	
+
+
+						<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Are you sure you want to delete this user?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Delete user</button>
+      </div>
+    </div>
+  </div>
+</div>	
+
+
+					<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Email inactive users</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Subject line</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter a subject line">
+		  </div>
+		</form>
+		<div class="form-group">
+		    <label for="exampleTextarea">Message body</label>
+		    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+		  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Send email</button>
+      </div>
+    </div>
+  </div>
+</div>		
+
+
+<script type="text/javascript">
+$(document).on("click","ul.nav li.parent > a ", function(){          
+    $(this).find('i').toggleClass("fa-minus");      
+}); 
+$(".sidebar span.icon").find('em:first').addClass("fa-plus");
+
+$('#calendar').datepicker({
+		});
+
+$("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
+
+
+<script type="text/javascript">
+
+$(function() {
+   $('#easypiechart-4').easyPieChart({
+       scaleColor: false,
+       barColor: '#00adee'
+   });
+});
+</script>
+
+<script type="text/javascript">
+	$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+
+
+
+
+<script>
+new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov"],
+    datasets: [{ 
+        data: [6.2,6.4,6.8,6.4,6.8,7.0,7.2,7.9,7.0,7.1,7.6],
+        label: "Management",
+        borderColor: "#00adee",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    legend: {
+    		display: false,
+            position: 'bottom',
+            labels: {
+                fontFamily: 'Lato',
+                fontSize: 14,
+            }
+        },
+    scales : {
+        xAxes : [ {
+            gridLines : {
+                display : false,
+            }
+        } ],
+        yAxes : [ {
+            gridLines : {
+                display : false,
+            }
+        } ]
+    }
+
+  },
+
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+

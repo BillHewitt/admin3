@@ -1,0 +1,1112 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+
+	<main class="col-xs-12 col-sm-8 col-lg-9 col-xl-10 pt-3 pl-4 ml-auto">
+		<header class="page-header row justify-center">
+			<div class="col-md-6 col-lg-8">
+				<h1 class="float-left text-center text-md-left">Questions</h1>
+				<div class="btn-group">
+					<button data-toggle="dropdown" class="btn btn-link btn-lg no-padding dropdown-toggle margin" aria-expanded="false">Entire company <span class="caret"></span></button>
+					<ul class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 36px, 0px); top: 0px; left: 0px; will-change: transform;">
+						<li><a href="#">Account Management</a></li>
+						<li><a href="#" class="font-bold">Product & Engineering</a></li>
+						<li class="divider"></li>
+						<li><a href="#">London</a></li>
+						<li><a href="#">Sheffield</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<img src="https://i.imgur.com/sRiXEAA.jpg" alt="profile photo" class="circle float-left profile-photo" width="50" height="auto">
+				<div class="username mt-1">
+					<h4 class="mb-1">Shaun Bradley</h4>
+					<h6 class="text-muted">People Director</h6>
+				</div>
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><%= link_to "My Profile", pages_profile_path, :class => "dropdown-item" %>
+				     <a class="dropdown-item" href="#">Logout</a></div>
+			</div>
+			<div class="clear"></div>
+		</header>
+
+		<section class="row space">
+			<div class="col-md-6">
+			</div>
+			<div class="col-md-6">
+				<div class="float-right">
+					<button type="button" class="btn btn-md btn-secondary">Download CSV</button>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="row">
+			<div class="col-sm-12">
+				<section class="row">
+					<div class="col-lg-12">
+						<div class="card mb-4">
+							<div class="card-block">
+								<h3 class="card-title">The organisation, strategy and culture <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="Here's a short description of what the organisation, strategy and culture is and why we ask it..."></em></h3>
+								<div class="dropdown card-title-btn-container">
+										<%= link_to pages_organisation_path do %>
+											<button class="btn btn-sm subtle" type="button">View report <em class="fa fa-chevron-right"></em></button>
+										<% end %>
+										</div>
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Question</th>
+											<th>Number of responses</th>
+											<th>Response rate</th>
+											<th>Score</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Perkbox encourages new ideas and innovation</td>
+											<td>145</td>
+											<td>63%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">9.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I have a sense of security in my job</td>
+											<td>35</td>
+											<td>32%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I feel that employees are always treated with respect</td>
+											<td>95</td>
+											<td>67%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">8.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I can envisage myself working at Perkbox one year from now</td>
+											<td>145</td>
+											<td>74%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">8.7/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I feel like the changes that are made at Perkbox help us go in the right direction</td>
+											<td>125</td>
+											<td>62%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">9.7/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+
+		<section class="row">
+			<div class="col-sm-12">
+				<section class="row">
+					<div class="col-lg-12">
+						<div class="card mb-4">
+							<div class="card-block">
+								<h3 class="card-title">Communication <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="Here's a short description of what the comunication is and why we ask about it..."></em></h3>
+								<div class="dropdown card-title-btn-container">
+											<%= link_to pages_communication_path do %>
+											<button class="btn btn-sm subtle" type="button">View report <em class="fa fa-chevron-right"></em></button>
+										<% end %>
+										</div>
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Question</th>
+											<th>Number of responses</th>
+											<th>Response rate</th>
+											<th>Score</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>I feel I can trust what Perkbox tells me</td>
+											<td>145</td>
+											<td>63%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">8.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I feel that I have a say in major changes that affect me and my job</td>
+											<td>35</td>
+											<td>32%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">8.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>There is good communication between the different departments</td>
+											<td>95</td>
+											<td>67%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Employee opinions and suggestions are given significant consideration in Perkbox's decision making process</td>
+											<td>145</td>
+											<td>74%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.7/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I am given all the information I need to do my job well</td>
+											<td>125</td>
+											<td>62%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">9.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+
+		<section class="row">
+			<div class="col-sm-12">
+				<section class="row">
+					<div class="col-lg-12">
+						<div class="card mb-4">
+							<div class="card-block">
+								<h3 class="card-title">My work <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="Here's a short description of what the my work is and why we ask about it..."></em></h3>
+								<div class="dropdown card-title-btn-container">
+										<%= link_to pages_mywork_path do %>
+											<button class="btn btn-sm subtle" type="button">View report <em class="fa fa-chevron-right"></em></button>
+										<% end %>
+										</div>
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Question</th>
+											<th>Number of responses</th>
+											<th>Response rate</th>
+											<th>Score</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>I have a clear understanding of what is expected of me at work</td>
+											<td>145</td>
+											<td>63%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>The volume of work I have in my role is manageable</td>
+											<td>35</td>
+											<td>32%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I feel I am contributing towards Perkbox's overall goals</td>
+											<td>95</td>
+											<td>67%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>The work processes we have in place allow for me to do my best</td>
+											<td>145</td>
+											<td>74%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.7/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I feel that I am trusted to make my own decisions about how best to do my job</td>
+											<td>125</td>
+											<td>62%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">8.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+	<section class="row">
+			<div class="col-sm-12">
+				<section class="row">
+					<div class="col-lg-12">
+						<div class="card mb-4">
+							<div class="card-block">
+								<h3 class="card-title">Management <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="Here's a short description of what management is and why we ask about it..."></em></h3>
+								<div class="dropdown card-title-btn-container">
+											<%= link_to pages_management_path do %>
+											<button class="btn btn-sm subtle" type="button">View report <em class="fa fa-chevron-right"></em></button>
+										<% end %>
+										</div>
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Question</th>
+											<th>Number of responses</th>
+											<th>Response rate</th>
+											<th>Score</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>My manager has the skills, knowledge and resources to manage the team well</td>
+											<td>145</td>
+											<td>63%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">6.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>My manager allows me the time to undertake career development activities</td>
+											<td>35</td>
+											<td>32%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">6.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>My manager provides me with the support I need to succeed</td>
+											<td>95</td>
+											<td>67%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>My manager is open and honest</td>
+											<td>145</td>
+											<td>74%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">5.7/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>My manager encourages and empowers me to take the initiative and suggest improvements</td>
+											<td>125</td>
+											<td>62%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>	
+
+		<section class="row">
+			<div class="col-sm-12">
+				<section class="row">
+					<div class="col-lg-12">
+						<div class="card mb-4">
+							<div class="card-block">
+								<h3 class="card-title">Leadership <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="Here's a short description of what leadership is and why we ask about it..."></em></h3>
+								<div class="dropdown card-title-btn-container">
+											<%= link_to pages_leadership_path do %>
+											<button class="btn btn-sm subtle" type="button">View report <em class="fa fa-chevron-right"></em></button>
+										<% end %>
+										</div>
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Question</th>
+											<th>Number of responses</th>
+											<th>Response rate</th>
+											<th>Score</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>I understand the mission/purpose of my department</td>
+											<td>145</td>
+											<td>53%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">6.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>The senior management at Perkbox is open and honest in communication</td>
+											<td>35</td>
+											<td>42%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">6.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>The senior management cares about what is on employees’ minds</td>
+											<td>95</td>
+											<td>67%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>The senior management treats employees as Perkbox's most valued asset</td>
+											<td>145</td>
+											<td>64%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">5.7/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I trust the senior management to appropriately balance employee interests with those of Perkbox</td>
+											<td>125</td>
+											<td>82%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>				
+
+
+		<section class="row">
+			<div class="col-sm-12">
+				<section class="row">
+					<div class="col-lg-12">
+						<div class="card mb-4">
+							<div class="card-block">
+								<h3 class="card-title">Opportunities <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="Here's a short description of what opportunities is and why we ask about it..."></em></h3>
+								<div class="dropdown card-title-btn-container">
+											<%= link_to pages_opportunities_path do %>
+											<button class="btn btn-sm subtle" type="button">View report <em class="fa fa-chevron-right"></em></button>
+										<% end %>
+										</div>
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Question</th>
+											<th>Number of responses</th>
+											<th>Response rate</th>
+											<th>Score</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>I feel that I have future career opportunities at Perkbox</td>
+											<td>145</td>
+											<td>53%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">6.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I have opportunities to develop skills to achieve my career goals</td>
+											<td>35</td>
+											<td>42%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">6.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Perkbox focuses on promoting the people best equipped to meet the future needs of the company</td>
+											<td>95</td>
+											<td>67%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>If I perform well in my role, it will lead to opportunities for me to progress</td>
+											<td>145</td>
+											<td>64%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">5.7/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>The performance review process helps me focus my work efforts to help the organisation achieve its goals</td>
+											<td>125</td>
+											<td>82%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>		
+
+		<section class="row">
+			<div class="col-sm-12">
+				<section class="row">
+					<div class="col-lg-12">
+						<div class="card mb-4">
+							<div class="card-block">
+								<h3 class="card-title">Rewards and recognition <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="Here's a short description of what rewards and recognition is and why we ask about it..."></em></h3>
+								<div class="dropdown card-title-btn-container">
+											<%= link_to pages_reward_path do %>
+											<button class="btn btn-sm subtle" type="button">View report <em class="fa fa-chevron-right"></em></button>
+										<% end %>
+										</div>
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Question</th>
+											<th>Number of responses</th>
+											<th>Response rate</th>
+											<th>Score</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>My salary and benefits package meet my needs well</td>
+											<td>145</td>
+											<td>53%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">6.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I am paid fairly for the contributions I make to Perkbox's success</td>
+											<td>35</td>
+											<td>42%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">6.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I am rewarded for exceeding my goals</td>
+											<td>95</td>
+											<td>67%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I receive appropriate recognition (beyond my pay) for my contributions and accomplishments</td>
+											<td>145</td>
+											<td>64%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">5.7/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I feel I am adequately paid compared to my colleagues at other organisations</td>
+											<td>125</td>
+											<td>82%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="row">
+			<div class="col-sm-12">
+				<section class="row">
+					<div class="col-lg-12">
+						<div class="card mb-4">
+							<div class="card-block">
+								<h3 class="card-title">Training and development <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="Here's a short description of what training and development is and why we ask about it..."></em></h3>
+								<div class="dropdown card-title-btn-container">
+											<%= link_to pages_training_path do %>
+											<button class="btn btn-sm subtle" type="button">View report <em class="fa fa-chevron-right"></em></button>
+										<% end %>
+										</div>
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Question</th>
+											<th>Number of responses</th>
+											<th>Response rate</th>
+											<th>Score</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>In the last 6 months my manager has talked to me about my progress</td>
+											<td>145</td>
+											<td>53%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">5.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>My manager encourages and supports my development</td>
+											<td>35</td>
+											<td>42%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">5.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>There is an effective process to help me identify any development needs</td>
+											<td>95</td>
+											<td>67%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>The organisation provides training to help me build skills that are valuable to me</td>
+											<td>145</td>
+											<td>64%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">5.7/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>When I started work I received as much induction training as I needed</td>
+											<td>125</td>
+											<td>82%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">5.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>	
+
+
+					<section class="row">
+			<div class="col-sm-12">
+				<section class="row">
+					<div class="col-lg-12">
+						<div class="card mb-4">
+							<div class="card-block">
+								<h3 class="card-title">Quality of life <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="Here's a short description of what quality of life is and why we ask about it..."></em></h3>
+								<div class="dropdown card-title-btn-container">
+											<%= link_to pages_quality_path do %>
+											<button class="btn btn-sm subtle" type="button">View report <em class="fa fa-chevron-right"></em></button>
+										<% end %>
+										</div>
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Question</th>
+											<th>Number of responses</th>
+											<th>Response rate</th>
+											<th>Score</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>The balance between my work and personal commitments is right for me</td>
+											<td>145</td>
+											<td>43%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">5.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>My work-related stress is manageable for me</td>
+											<td>35</td>
+											<td>42%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">5.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I can keep a reasonable balance between work and personal life</td>
+											<td>95</td>
+											<td>67%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>The work environment is appropriate for the type of work I do</td>
+											<td>145</td>
+											<td>64%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">5.7/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>My regular work location is convenient for me</td>
+											<td>125</td>
+											<td>82%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">5.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>	
+
+
+					<section class="row">
+			<div class="col-sm-12">
+				<section class="row">
+					<div class="col-lg-12">
+						<div class="card mb-4">
+							<div class="card-block">
+								<h3 class="card-title">Teamwork <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="Here's a short description of what teamwork is and why we ask about it..."></em></h3>
+								<div class="dropdown card-title-btn-container">
+											<%= link_to pages_teamwork_path do %>
+											<button class="btn btn-sm subtle" type="button">View report <em class="fa fa-chevron-right"></em></button>
+										<% end %>
+										</div>
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Question</th>
+											<th>Number of responses</th>
+											<th>Response rate</th>
+											<th>Score</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>I see teams working together effectively across different departments</td>
+											<td>145</td>
+											<td>53%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">5.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I feel part of a team working towards a shared goal</td>
+											<td>35</td>
+											<td>42%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">5.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>My fellow employees are committed to doing quality work</td>
+											<td>95</td>
+											<td>67%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>My co-workers respect my thoughts and feelings</td>
+											<td>145</td>
+											<td>64%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">5.7/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>I have a good friend at work</td>
+											<td>125</td>
+											<td>82%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">5.4/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>	
+
+				<section class="row">
+			<div class="col-sm-12">
+				<section class="row">
+					<div class="col-lg-12">
+						<div class="card mb-4">
+							<div class="card-block">
+								<h3 class="card-title">eNPS <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="Here's a short description of what eNPS is and why we ask it..."></em></h3>
+								<div class="dropdown card-title-btn-container">
+										</div>
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Question</th>
+											<th>Number of responses</th>
+											<th>Response rate</th>
+											<th>Score</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>I would refer a friend or family member to work at Perkbox</td>
+											<td>245</td>
+											<td>94%</td>
+											<td>
+												<div class="">
+													<h6 class="pt-1">7.5/10 </h6>
+													<div class="progress progress-custom">
+														<div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>			
+
+
+<script type="text/javascript">
+$(document).on("click","ul.nav li.parent > a ", function(){          
+    $(this).find('i').toggleClass("fa-minus");      
+}); 
+$(".sidebar span.icon").find('em:first').addClass("fa-plus");
+
+$('#calendar').datepicker({
+		});
+
+$("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
+
+<script type="text/javascript">
+
+$(function() {
+   $('#easypiechart-4').easyPieChart({
+       scaleColor: false,
+       barColor: '#00adee'
+   });
+});
+</script>
+
+<script type="text/javascript">
+	$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+
+
+
+
+<script>
+new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov"],
+    datasets: [{ 
+        data: [6.2,6.4,6.8,6.4,6.8,7.0,7.2,7.9,7.0,7.1,7.6],
+        label: "Sur",
+        borderColor: "#00adee",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    legend: {
+    		display: false,
+            position: 'bottom',
+            labels: {
+                fontFamily: 'Lato',
+                fontSize: 14,
+            }
+        },
+    scales : {
+        xAxes : [ {
+            gridLines : {
+                display : false,
+            }
+        } ],
+        yAxes : [ {
+            gridLines : {
+                display : false,
+            }
+        } ]
+    }
+
+  },
+
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+

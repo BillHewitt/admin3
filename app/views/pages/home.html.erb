@@ -1,0 +1,155 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+
+
+	<main class="col-xs-12 col-sm-8 col-lg-9 col-xl-10 pt-3 pl-4 ml-auto">
+		<header class="page-header row justify-center">
+			<div class="col-md-6 col-lg-8">
+				<h1 class="float-left text-center text-md-left">Home</h1>
+			</div>
+			<div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<img src="assets/shaun.jpg" alt="profile photo" class="circle float-left profile-photo" width="50" height="auto">
+				<div class="username mt-1">
+					<h4 class="mb-1">Shaun Bradley</h4>
+					<h6 class="text-muted">People Director</h6>
+				</div>
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink">
+
+					<%= link_to "My Profile", pages_profile_path, :class => "dropdown-item" %>
+				     <a class="dropdown-item" href="#">Logout</a></div>
+			</div>
+			<div class="clear"></div>
+		</header>
+
+		<section class="row space">
+			<div class="col-sm-12">
+				<h3 class="text-center space home">
+					Hey Shaun, see what's been happening at Perkbox this week...
+				</h3>
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="col-sm-12">
+				<section class="row refresh">
+					<div class="col-md-4 col-lg-4">
+						<div class="card mb-3 text-center ">
+								<div class="card-block">
+									<h1>8.2/10
+									<h5 class="mt-2 mb-1"> Overall Engagement Score</h5>
+									<%= link_to "View engagement score", pages_engagement_path %>
+									</div>
+								</div>
+						</div>
+					<div class="col-md-4 col-lg-4">
+						<div class="card mb-3 text-center ">
+								<div class="card-block">
+									<h1>64%</h1>
+									<h5 class="mt-2 mb-1">Survey Response Rate</h5>
+									<%= link_to "See participation stats", pages_stats_path %>
+									</div>
+								</div>
+					
+					</div><div class="col-md-4 col-lg-4">
+						<div class="card mb-3 text-center ">
+								<div class="card-block">
+									<h1>4</h1>
+									<h5 class="mt-2 mb-1">New Users Added</h5>
+									<%= link_to "Invite new user", pages_usersnew_path %>
+									</div>
+								</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+	</main>
+</div>
+
+
+<script type="text/javascript">
+$(document).on("click","ul.nav li.parent > a ", function(){          
+    $(this).find('i').toggleClass("fa-minus");      
+}); 
+$(".sidebar span.icon").find('em:first').addClass("fa-plus");
+
+$('#calendar').datepicker({
+		});
+
+$("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
+
+<script type="text/javascript">
+
+$(function() {
+   $('#easypiechart-4').easyPieChart({
+       scaleColor: false,
+       barColor: '#00adee'
+   });
+});
+</script>
+
+<script type="text/javascript">
+	$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+
+
+
+
+<script>
+new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov"],
+    datasets: [{ 
+        data: [7.2,7.4,7.8,7.4,7.8,8.0,8.2,7.9,8.0,8.1,8.2],
+        label: "Engagement",
+        borderColor: "#00adee",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    legend: {
+    		display: false,
+            position: 'bottom',
+            labels: {
+                fontFamily: 'Lato',
+                fontSize: 14,
+            }
+        },
+    scales : {
+        xAxes : [ {
+            gridLines : {
+                display : false,
+            }
+        } ],
+        yAxes : [ {
+            gridLines : {
+                display : false,
+            }
+        } ]
+    }
+
+  },
+
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,239 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+
+	<main class="col-xs-12 col-sm-8 col-lg-9 col-xl-10 pt-3 pl-4 ml-auto">
+		<header class="page-header row justify-center">
+			<div class="col-md-6 col-lg-8">
+				<h1 class="float-left text-center text-md-left">Settings </h1>
+
+			</div>
+			<div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<img src="https://i.imgur.com/sRiXEAA.jpg" alt="profile photo" class="circle float-left profile-photo" width="50" height="auto">
+				<div class="username mt-1">
+					<h4 class="mb-1">Shaun Bradley</h4>
+					<h6 class="text-muted">People Director</h6>
+				</div>
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><%= link_to "My Profile", pages_profile_path, :class => "dropdown-item" %>
+				     <a class="dropdown-item" href="#">Logout</a></div>
+			</div>
+			<div class="clear"></div>
+		</header>
+
+
+				<section class="row">
+					<div class="col-sm-12">
+						<section class="row">
+							<div class="col-md-4 col-lg-4">
+								<div class="card mb-4">
+									<ul class="list-group">
+									  <%= link_to "Company", pages_settings_path, :class => "list-group-item" %>
+									  <%= link_to "Survey", pages_settings1_path, :class => "list-group-item" %>
+									  <%= link_to "Emails", pages_settings2_path, :class => "list-group-item active" %>
+									</ul>
+									
+								</div>
+							</div>
+							<div class="col-md-8 col-lg-8">
+								<div class="card mb-4">
+									<div class="card-block">
+										<h3 class="card-title">Emails</h3>
+										<form class="form" action="#">
+											<div class="form-group row">
+												<label class="col-md-3 col-form-label">Welcome email <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="This is the first email people will receive when they're invited to Perkbox Insights and receive their first survey."></em></label>
+												<div class="col-md-9">
+													<div class="form-group">
+													    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Hello and welcome to Perkbox Insights. We're using this tool as a way to give you a voice and to make sure we're helping to create a work environment everyone's proud to be part of. You'll get a short, weekly email sent straight to your inbox. We'd really appreciate if you take the time to fill it out for us :)."></textarea>
+													  </div>
+													  <a class="ul-link js-add-user-box" href="#" data-toggle="modal" data-target="#myModal">Send test email</a>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-3 col-form-label">Survey email <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="This is the email that will be sent out each week to your company."></em></label>
+												<div class="col-md-9">
+													<div class="form-group">
+													    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Tick tock, it's survey o'clock. You know what to do :)"></textarea>
+													  </div>
+													  <a class="ul-link js-add-user-box" href="#" data-toggle="modal" data-target="#myModal">Send test email</a>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-3 col-form-label">Reminder email <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="This is the email that will be automatically sent to people if they haven't completed their survey in a timely fashion."></em></label>
+												<div class="col-md-9">
+													<div class="form-group">
+													    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Hey, we've noted you've not yet filled in your survey. Take 2?"></textarea>
+													  </div>
+													  <a class="ul-link js-add-user-box" href="#" data-toggle="modal" data-target="#myModal">Send test email</a>
+												</div>
+											</div>
+										<section class="row">
+											<div class="col-md-6">
+											</div>
+											<div class="col-md-6">
+												<div class="float-right">
+													<button type="button" class="btn btn-md btn-secondary">Save</button>
+												</div>
+											</div>
+										</section>
+									</div>
+								</div>
+				</section>
+
+	
+
+						<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Send test email</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Email address</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+		  </div>
+      </div>
+      <div class="modal-footer">
+      	<button type="button" class="btn btn-tertiary">Cancel</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Send test email</button>
+      </div>
+    </div>
+  </div>
+</div>	
+
+
+						<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add multiple users</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">First name</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First name">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Last name</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last name">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Email name</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+		  </div>
+		</form>
+		<div class="form-group">
+		    <label for="exampleSelect1">Add to the following team</label>
+		    <select class="form-control" id="exampleSelect1">
+		      <option>Perkbox</option>
+		      <option>Account Management</option>
+		      <option>Product & Engineering</option>
+		      <option>London</option>
+		      <option>Sheffield</option>
+		    </select>
+		  </div>
+      </div>
+      <div class="modal-footer">
+      	<button type="button" class="btn btn-tertiary">Cancel</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Add user</button>
+      </div>
+    </div>
+  </div>
+</div>			
+
+
+<script type="text/javascript">
+$(document).on("click","ul.nav li.parent > a ", function(){          
+    $(this).find('i').toggleClass("fa-minus");      
+}); 
+$(".sidebar span.icon").find('em:first').addClass("fa-plus");
+
+$('#calendar').datepicker({
+		});
+
+$("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
+
+<script type="text/javascript">
+
+$(function() {
+   $('#easypiechart-4').easyPieChart({
+       scaleColor: false,
+       barColor: '#00adee'
+   });
+});
+</script>
+
+<script type="text/javascript">
+	$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+
+
+
+
+<script>
+new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov"],
+    datasets: [{ 
+        data: [6.2,6.4,6.8,6.4,6.8,7.0,7.2,7.9,7.0,7.1,7.6],
+        label: "Management",
+        borderColor: "#00adee",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    legend: {
+    		display: false,
+            position: 'bottom',
+            labels: {
+                fontFamily: 'Lato',
+                fontSize: 14,
+            }
+        },
+    scales : {
+        xAxes : [ {
+            gridLines : {
+                display : false,
+            }
+        } ],
+        yAxes : [ {
+            gridLines : {
+                display : false,
+            }
+        } ]
+    }
+
+  },
+
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+

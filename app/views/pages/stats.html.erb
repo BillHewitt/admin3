@@ -1,0 +1,236 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+
+	<main class="col-xs-12 col-sm-8 col-lg-9 col-xl-10 pt-3 pl-4 ml-auto">
+		<header class="page-header row justify-center">
+			<div class="col-md-6 col-lg-8">
+				<h1 class="float-left text-center text-md-left">Stats</h1>
+				<div class="btn-group">
+					<button data-toggle="dropdown" class="btn btn-link btn-lg no-padding dropdown-toggle margin" aria-expanded="false">Entire company <span class="caret"></span></button>
+					<ul class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 36px, 0px); top: 0px; left: 0px; will-change: transform;">
+						<li><a href="#">Account Management</a></li>
+						<li><a href="#" class="font-bold">Product & Engineering</a></li>
+						<li class="divider"></li>
+						<li><a href="#">London</a></li>
+						<li><a href="#">Sheffield</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<img src="https://i.imgur.com/sRiXEAA.jpg" alt="profile photo" class="circle float-left profile-photo" width="50" height="auto">
+				<div class="username mt-1">
+					<h4 class="mb-1">Shaun Bradley</h4>
+					<h6 class="text-muted">People Director</h6>
+				</div>
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><%= link_to "My Profile", pages_profile_path, :class => "dropdown-item" %>
+				     <a class="dropdown-item" href="#">Logout</a></div>
+			</div>
+			<div class="clear"></div>
+		</header>
+
+		<section class="row space">
+			<div class="col-md-6">
+				<nav class="breadcrumb">
+				  
+				</nav>
+			</div>
+			<div class="col-md-6">
+				<div class="float-right">
+					<button type="button" class="btn btn-md btn-secondary">Download report</button>
+				</div>
+			</div>
+		</section>
+
+					<section class="row">
+					<div class="col-sm-12">
+						<section class="row">
+							<div class="col-md-12 col-lg-12">
+								<div class="card mb-4">
+									<div class="row">
+									<div class="col-md-4 col-lg-4">
+										<div class="card-block">
+											<h3 class="card-title text-center">Response Rate <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="This is the percentage of people that have responded to the surveys this week"></em></h3>
+											<div class="canvas-wrapper" data-toggle="tooltip" data-placement="top" title="Not a bad response rate, you could try sending ">
+												<div class="easypiechart" id="easypiechart-4" data-percent="64"><canvas height="300" width="300" style="height: 110px; width: 110px;"></canvas></div>
+												<h3 class="mt-2 mb-1 text-center">64%</h3>
+												<p class="mb-1 text-center text-muted small">-15% since last week</p>
+											</div>
+										</div>
+									</div>
+						
+							<div class="col-md-8 col-lg-8">
+											<div class="bill">
+											<canvas id="line-chart" height="90"></canvas>
+										</div>
+										</div>
+									</div>
+							</div>
+					</section>
+
+
+		<section class="row top-space">
+			<div class="col-sm-12">
+				<section class="row refresh">
+					<div class="col-md-4 col-lg-4">
+						<div class="card mb-3 text-center ">
+								<div class="card-block">
+									<h1>396</h1>
+									<h5 class="mt-2 mb-1">Total Responses </h5>
+									</div>
+								</div>
+						</div>
+					<div class="col-md-4 col-lg-4">
+						<div class="card mb-3 text-center ">
+								<div class="card-block">
+									<h1>96</h1>
+									<h5 class="mt-2 mb-1">Active Users <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="People that have answered a survey in the last 4 weeks"></em></h5>
+									</div>
+								</div>
+					
+					</div><div class="col-md-4 col-lg-4">
+						<div class="card mb-3 text-center ">
+								<div class="card-block">
+									<h1>42</h1>
+									<h5 class="mt-2 mb-1">Inactive users <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="People that haven't answered a survey in the last 4 weeks"></em></h5>
+									<div class="dropdown card-title-btn-container">
+											<button class="btn btn-sm btn-subtle" type="button" data-toggle="modal" data-target="#myModal"><em class="fa fa-pencil"></em> Message</button>
+									</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</section>
+
+
+
+					<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Email inactive users</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Subject line</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter a subject line">
+		  </div>
+		</form>
+		<div class="form-group">
+		    <label for="exampleTextarea">Message body</label>
+		    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+		  </div>
+      </div>
+      <div class="modal-footer">
+      	<button type="button" class="btn btn-tertiary">Cancel</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Send email</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+				</section>
+			</div>
+		</section>
+	</main>
+</div>
+
+<script type="text/javascript">
+$(document).on("click","ul.nav li.parent > a ", function(){          
+    $(this).find('i').toggleClass("fa-minus");      
+}); 
+$(".sidebar span.icon").find('em:first').addClass("fa-plus");
+
+$('#calendar').datepicker({
+		});
+
+$("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
+
+<script type="text/javascript">
+	$('#myModal').on('shown.bs.modal', function() {
+  $('#myInput').focus()
+})
+</script>
+
+
+<script type="text/javascript">
+
+$(function() {
+   $('#easypiechart-4').easyPieChart({
+       scaleColor: false,
+       barColor: '#00adee'
+   });
+});
+</script>
+
+<script type="text/javascript">
+	$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+
+
+
+
+<script>
+new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov"],
+    datasets: [{ 
+        data: [70,75,88,70,64,80,80,70,80,71,64],
+        label: "Response Rate",
+        borderColor: "#00adee",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    legend: {
+    		display: false,
+            position: 'bottom',
+            labels: {
+                fontFamily: 'Lato',
+                fontSize: 14,
+            }
+        },
+    scales : {
+        xAxes : [ {
+            gridLines : {
+                display : false,
+            }
+        } ],
+        yAxes : [ {
+            gridLines : {
+                display : false,
+            }
+        } ]
+    }
+
+  },
+
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+

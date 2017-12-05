@@ -1,0 +1,182 @@
+<nav class="sidebar col-xs-12 col-sm-4 col-lg-3 col-xl-2">
+	<h1 class="site-title">
+		<%= link_to "Home", root_path %>
+	</h1>
+	
+	<ul class="nav nav-pills flex-column sidebar-nav">
+		<li class="parent nav-item"><a class="nav-link" data-toggle="collapse" href="#sub-item-1">
+				 Insights <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><i class="fa fa-chevron-down"></i></span>
+			</a>
+			<% if current_page?(pages_engagement_path) or current_page?(pages_organisation_path) or current_page?(pages_communication_path) or current_page?(pages_mywork_path) or current_page?(pages_leadership_path) or current_page?(pages_management_path) or current_page?(pages_opportunities_path) or current_page?(pages_reward_path) or current_page?(pages_training_path) or current_page?(pages_teamwork_path) or current_page?(pages_quality_path) %>
+			  <ul class="children collapse show" id="sub-item-1">
+			<% else -%>		
+				<ul class="children collapse" id="sub-item-1">
+			<% end -%>
+
+					
+			<% if current_page?(pages_engagement_path) -%>
+				  <li class="nav-item">
+				    <%= link_to "Engagement", pages_engagement_path, :class => "nav-link active" %>
+				  </li>
+				<% else -%>
+				  <li class="nav-item">
+				    <%= link_to "Engagement", pages_engagement_path, :class => "nav-link" %>
+				  </li>
+			 <% end -%>
+
+			 <% if current_page?(pages_organisation_path) -%>
+				  <li class="nav-item">
+				    <%= link_to "The organisation, strategy & culture", pages_organisation_path, :class => "nav-link active" %>
+				  </li>
+				<% else -%>
+				  <li class="nav-item">
+				    <%= link_to "The organisation, strategy & culture", pages_organisation_path, :class => "nav-link" %>
+				  </li>
+			 <% end -%>
+
+			 <% if current_page?(pages_communication_path) -%>
+				  <li class="nav-item">
+				    <%= link_to "Communication", pages_communication_path, :class => "nav-link active" %>
+				  </li>
+				<% else -%>
+				  <li class="nav-item">
+				    <%= link_to "Communication", pages_communication_path, :class => "nav-link" %>
+				  </li>
+			 <% end -%>
+
+			 <% if current_page?(pages_mywork_path) -%>
+				  <li class="nav-item">
+				    <%= link_to "My work", pages_mywork_path, :class => "nav-link active" %>
+				  </li>
+				<% else -%>
+				  <li class="nav-item">
+				    <%= link_to "My work", pages_mywork_path, :class => "nav-link" %>
+				  </li>
+			 <% end -%>
+
+			 <% if current_page?(pages_leadership_path) -%>
+				  <li class="nav-item">
+				    <%= link_to "Leadership", pages_leadership_path, :class => "nav-link active" %>
+				  </li>
+				<% else -%>
+				  <li class="nav-item">
+				    <%= link_to "Leadership", pages_leadership_path, :class => "nav-link" %>
+				  </li>
+			 <% end -%>
+
+			 <% if current_page?(pages_management_path) -%>
+				  <li class="nav-item">
+				    <%= link_to "Management", pages_management_path, :class => "nav-link active" %>
+				  </li>
+				<% else -%>
+				  <li class="nav-item">
+				    <%= link_to "Management", pages_management_path, :class => "nav-link" %>
+				  </li>
+			 <% end -%>
+
+			 <% if current_page?(pages_opportunities_path) -%>
+				  <li class="nav-item">
+				    <%= link_to "Opportunities", pages_opportunities_path, :class => "nav-link active" %>
+				  </li>
+				<% else -%>
+				  <li class="nav-item">
+				    <%= link_to "Opportunities", pages_opportunities_path, :class => "nav-link" %>
+				  </li>
+			 <% end -%>
+
+			  <% if current_page?(pages_reward_path) -%>
+				  <li class="nav-item">
+				    <%= link_to "Reward & recognition", pages_reward_path, :class => "nav-link active" %>
+				  </li>
+				<% else -%>
+				  <li class="nav-item">
+				    <%= link_to "Reward & recognition", pages_reward_path, :class => "nav-link" %>
+				  </li>
+			 <% end -%>
+
+			  <% if current_page?(pages_training_path) -%>
+				  <li class="nav-item">
+				    <%= link_to "Training & Development", pages_training_path, :class => "nav-link active" %>
+				  </li>
+				<% else -%>
+				  <li class="nav-item">
+				    <%= link_to "Training & Development", pages_training_path, :class => "nav-link" %>
+				  </li>
+			 <% end -%>
+
+			  <% if current_page?(pages_teamwork_path) -%>
+				  <li class="nav-item">
+				    <%= link_to "Teamwork", pages_teamwork_path, :class => "nav-link active" %>
+				  </li>
+				<% else -%>
+				  <li class="nav-item">
+				    <%= link_to "Teamwork", pages_teamwork_path, :class => "nav-link" %>
+				  </li>
+			 <% end -%>
+
+			 <% if current_page?(pages_quality_path) -%>
+				  <li class="nav-item">
+				    <%= link_to "Quality of life", pages_quality_path, :class => "nav-link active" %>
+				  </li>
+				<% else -%>
+				  <li class="nav-item">
+				    <%= link_to "Quality of life", pages_quality_path, :class => "nav-link" %>
+				  </li>
+			 <% end -%>
+
+				</ul>
+			</li>
+
+		<li class="parent nav-item"><a class="nav-link" data-toggle="collapse" href="#sub-item-2">
+				 Survey <span data-toggle="collapse" href="#sub-item-2" class="icon pull-right"><i class="fa fa-chevron-down"></i></span>
+			</a>
+			<% if current_page?(pages_survey_path) or current_page?(pages_stats_path) %>
+			   <ul class="children collapse show" id="sub-item-2">
+			<% else -%>		
+				<ul class="children collapse" id="sub-item-2">
+			<% end -%>
+
+
+		    <% if current_page?(pages_survey_path) -%>
+				  <li class="nav-item">
+				    <%= link_to "Questions", pages_survey_path, :class => "nav-link active" %>
+				  </li>
+				<% else -%>
+				  <li class="nav-item">
+				    <%= link_to "Questions", pages_survey_path, :class => "nav-link" %>
+				  </li>
+			 <% end -%>
+
+			 <% if current_page?(pages_stats_path) -%>
+				  <li class="nav-item">
+				    <%= link_to "Stats", pages_stats_path, :class => "nav-link active" %>
+				  </li>
+				<% else -%>
+				  <li class="nav-item">
+				    <%= link_to "Stats", pages_stats_path, :class => "nav-link" %>
+				  </li>
+			 <% end -%>
+
+				</ul>
+			</li>
+		<li class="nav-item">
+			<%= link_to "Action Board", pages_action_path, :class => "nav-link" %>
+		</li>
+		<li class="nav-item">
+			<%= link_to "Users", pages_users_path, :class => "nav-link" %>
+		</li>
+		<li class="nav-item">
+			<%= link_to "Settings", pages_settings_path, :class => "nav-link" %>
+		</li>
+	</ul>
+</nav>
+
+<% if current_page?(pages_engagement_path) -%>
+  <li class="nav-item">
+    <%= link_to "Engagement", pages_engagement_path, :class => "nav-link active" %>
+  </li>
+<% else -%>
+  <li class="nav-item">
+    <%= link_to "Engagement", pages_engagement_path, :class => "nav-link" %>
+  </li>
+ <% end -%>
